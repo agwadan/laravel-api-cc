@@ -8,16 +8,14 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class InvoiceFactory extends Factory
 {
-  /* @var string */
+
 
   /* protected $model = Invoice::class; */
-
-  /* @return array */
 
   public function definition()
   {
 
-    $status = $this->faker->randomElement((['B', 'P', 'V']));
+    $status = $this->faker->randomElement((['B', 'P', 'V'])); /* Billed, Paid , Void */
 
     return [
       'customer_id' => Customer::factory(),
