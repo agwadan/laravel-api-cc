@@ -22,7 +22,7 @@ class InvoiceFactory extends Factory
       'amount' => $this->faker->numberBetween(100, 20000),
       'status' => $status,
       'billed_date' => $this->faker->dateTimeThisDecade(),
-      'paid_date' => $status == 'p' ? $this->faker->dateTimeThisDecade() : null,
+      'paid_date' => $status == 'P' ? $this->faker->dateTimeThisDecade() : null,
     ];
   }
 }
